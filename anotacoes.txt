@@ -1,0 +1,71 @@
+Anotações sobre o projeto.
+
+OBJETIVO DO PROJETO  👇:
+
+    Criar nossa API de usuários
+
+        - Criar um usuário
+        - Listar todos os usuários
+        - Editar um usuário
+        - Deletar um usuário
+
+============================================================================================================
+
+CONST APP = EXPRESS()  👇:
+
+Os criadores do express recomendam que nós devemos criar uma variável, que normalmente se chama "app". Dentro dessa variável vamos passar o express como uma função. Pois agora dentro da variável app, vamos ter acesso a tudo que tem dentro do express.
+
+============================================================================================================
+
+ROTAS  👇:
+
+Em resumo, uma Rota devolve alguma coisa. Uma Rota é basicamente uma comunicação entre o BackEnd e o FrontEnd. Eu vou criando Rotas e consequentemente nós conseguimos mandar e receber informações.
+
+Nossas Rotas precisam de duas coisas:
+    1. Tipo de Rota / Método HTTP (Get, Post, Put e etc)
+    2. Endereço
+        exemplo: www.lojadoseuvalmir.com/produtos
+
+============================================================================================================
+
+MÉTODOS HTTP  👇:
+
+Get  ->  Listar  ex: buscar todos os usuários ou apenas um / mostrar alguma informação
+Post  ->  Criar  ex: criar um novo usuário
+Put  ->  Editar Vários  ex: atualizar todo um usuário (substituir)
+Patch  ->  Editar Um  ex: atualizar parcialmente um usuário
+Delete  ->  Deletar  ex: deletar um usuário
+
+============================================================================================================
+
+REQUEST  👇:
+
+Existem três formas para a gente enviar dados na nossa requisição:
+
+    Query Params (Get)
+        Consultas
+            EX: servidor.com/usuarios?estado=bahia&cidade=salvador
+            EX: servidor.com/series?tipo=comedia&streming=netflix
+
+        em resumo: estamos mandando parâmetros dentro da nossa URL
+
+    Route Params (Get / Put  / Delete)
+        Buscar, deletar ou editar algo específico (normalmente usamos o ID de algo para localizá-lo)
+            get servidor.com/users/22
+            Put servidor.com/users/22
+            delete servidor.com/users/22
+
+    Body Params (Post e Put)
+
+        {
+            "nome": "Rodolfo", "id": 22
+        }
+
+            Aqui nós enviamos as informações pelo Body. E usando essa forma, nós podemos enviar o que quisermos, desde informações mais banais e irrelevantes até informações mais delicadas e sensíveis como por exemplo o número do cartão de crédito.
+
+
+
+
+victorvernizzi
+
+7XZuQkvA1y0tlNMX

@@ -1,0 +1,27 @@
+{
+  "name": "projeto-api-node.js-dev-club",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "node --watch src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vernizzi-Dev/projeto-api-node.js-dev-club.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vernizzi-Dev/projeto-api-node.js-dev-club/issues"
+  },
+  "homepage": "https://github.com/Vernizzi-Dev/projeto-api-node.js-dev-club#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "prisma": "^6.18.0"
+  }
+}
